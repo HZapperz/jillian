@@ -1,0 +1,15 @@
+.avatar-scene {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 2rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .avatar-scene {
+    width: 250px;
+    height: 250px;
+  }
+} 

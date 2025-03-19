@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import AvatarScene from '../three/AvatarScene';
 import './About.css';
 
 const About = () => {
@@ -16,6 +17,10 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-text">
+            <Suspense fallback={<div className="avatar-loading">Loading avatar...</div>}>
+              <AvatarScene />
+            </Suspense>
+            
             <p className="about-intro">
               I'm a passionate UI/UX designer with experience from my internship at <span>[Previous Company Name]</span>. 
               I specialize in creating intuitive, user-friendly designs.
@@ -27,7 +32,11 @@ const About = () => {
             </div>
             
             <div className="about-links">
-              <a href="#" className="btn">
+              <a 
+                href="/files/resume.pdf" 
+                className="btn" 
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faDownload} className="icon" />
                 Download Resume
               </a>

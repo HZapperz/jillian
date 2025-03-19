@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main style={{ margin: 0, padding: 0 }}>{children}</main>
       <Footer />
     </>
   );

@@ -11,48 +11,6 @@
   padding: 0 1rem;
 }
 
-/* Project Navigation */
-.project-navigation {
-  background-color: var(--nav-bg);
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  color: var(--white);
-}
-
-.project-nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-link {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--primary-color);
-}
-
-.back-link {
-  margin-left: auto;
-  font-family: 'Montserrat', sans-serif;
-  color: var(--white);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.back-link:hover {
-  color: var(--primary-color);
-}
-
 /* Project Header */
 .project-header {
   background: linear-gradient(135deg, var(--nav-bg) 0%, #3a5269 100%);
@@ -185,6 +143,24 @@
   line-height: 1.7;
 }
 
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
 /* Project Footer */
 .project-footer {
   margin-top: 5rem;
@@ -274,15 +250,6 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .project-navigation {
-    padding: 1rem 0;
-  }
-  
-  .project-nav-links {
-    gap: 1rem;
-    font-size: 0.9rem;
-  }
-  
   .project-header {
     padding: 3.5rem 0;
   }

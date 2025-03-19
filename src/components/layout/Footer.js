@@ -10,34 +10,34 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-logo">
-          <Link to="/">Jillian Hohman</Link>
+        <div className="footer-branding">
+          <Link to="/" className="footer-logo">Jillian Hohman</Link>
         </div>
         
-        <div className="footer-links">
-          <div className="footer-link-section">
-            <h3>Navigation</h3>
+        <div className="footer-nav-section">
+          <h3>Navigation</h3>
+          <div className="footer-nav-links">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/portfolio">Portfolio</Link>
             <Link to="/contact">Contact</Link>
           </div>
-          
-          <div className="footer-link-section">
-            <h3>Contact</h3>
-            <p>jillian.hohman@example.com</p>
-            <p>San Francisco, CA</p>
-          </div>
         </div>
         
-        <div className="footer-social">
-          <a href="https://linkedin.com/in/jillianhohman" target="_blank" rel="noopener noreferrer">
+        <div className="footer-contact-section">
+          <h3>Contact</h3>
+          <p>jillian.hohman@example.com</p>
+          <p>San Francisco, CA</p>
+        </div>
+        
+        <div className="footer-social-section">
+          <a href="https://linkedin.com/in/jillianhohman" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" title="GitHub">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" title="Dribbble">
             <FontAwesomeIcon icon={faDribbble} />
           </a>
         </div>

@@ -1,25 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faLinkedin } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import './ProjectStyles.css';
 
 const HummingbirdProject = () => {
   return (
     <div className="project-detail-container">
-      <div className="project-navigation">
-        <div className="container">
-          <div className="project-nav-links">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
-          </div>
-          <Link to="/portfolio" className="back-link">
-            <FontAwesomeIcon icon={faArrowLeft} /> Back to Projects
-          </Link>
-        </div>
-      </div>
-
       <div className="project-header">
         <div className="container">
           <h1>Hummingbird</h1>
@@ -29,6 +16,10 @@ const HummingbirdProject = () => {
 
       <div className="project-content">
         <div className="container">
+          <Link to="/portfolio" className="back-link">
+            <FontAwesomeIcon icon={faArrowLeft} /> Back to Projects
+          </Link>
+          
           <section className="project-section">
             <h3>Project Overview</h3>
             <p>

@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# Jillian Hohman - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional portfolio website for UI/UX designer Jillian Hohman, showcasing her work, skills, and contact information.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Clean and Modern Design**: Light background with pastel accents
+- **Responsive Layout**: Works on desktop, tablet, and mobile devices
+- **Single-Page Application**: Smooth navigation between sections
+- **Project Showcase**: Modal-based project details
+- **Contact Form**: Interactive form with validation
+- **Accessibility Features**: Alt text, semantic HTML, keyboard navigation
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- React Router for navigation
+- CSS (no external UI libraries)
+- Font Awesome for icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone [repository-url]
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+   ```
+   cd jillian
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-### `npm run eject`
+### Running the Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the development server:
+```
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The site will be available at [http://localhost:3000](http://localhost:3000)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Building for Production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create a production build:
+```
+npm run build
+```
 
-## Learn More
+This will generate optimized files in the `build` directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deploying to Netlify
 
-### Code Splitting
+1. Create a Netlify account if you don't have one.
+2. Install the Netlify CLI:
+   ```
+   npm install -g netlify-cli
+   ```
+3. Login to Netlify:
+   ```
+   netlify login
+   ```
+4. Build your project:
+   ```
+   npm run build
+   ```
+5. Deploy to Netlify:
+   ```
+   netlify deploy --prod
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deploying to Vercel
 
-### Analyzing the Bundle Size
+1. Install Vercel CLI:
+   ```
+   npm install -g vercel
+   ```
+2. Login to Vercel:
+   ```
+   vercel login
+   ```
+3. Deploy to Vercel:
+   ```
+   vercel --prod
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+- `public/` - Static assets
+- `src/` - Source code
+  - `components/` - React components
+    - `layout/` - Layout components (Navbar, Footer)
+    - `sections/` - Main page sections (Home, About, Portfolio, Contact)
+  - `data/` - Data files
+  - `assets/` - Images and other assets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Customization
 
-### Advanced Configuration
+### Adding New Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Open `src/data/projects.js`
+2. Add a new project object to the array with the following structure:
+   ```javascript
+   {
+     id: 4, // Increment from the last ID
+     title: "Project Title",
+     description: "Project description",
+     role: "Your role in the project",
+     tools: ["Tool1", "Tool2"],
+     image: "image-url-or-path",
+     altText: "Description of the image",
+     link: "project-link"
+   }
+   ```
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License.
 
-### `npm run build` fails to minify
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Design & Development: [Your Name]
+- Portfolio Owner: Jillian Hohman
